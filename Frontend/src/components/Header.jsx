@@ -13,7 +13,7 @@ const Header = ({ cartItemsCount, onCartClick }) => {
       <div className="container">
         <div className="header-content">
           <div className="logo">
-            <h1>AnimeWear</h1>
+            <h1>Danzyyy...</h1>
           </div>
 
           <nav className={`nav ${isMobileMenuOpen ? "nav-open" : ""}`}>
