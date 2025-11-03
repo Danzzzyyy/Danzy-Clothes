@@ -1,78 +1,144 @@
 .register-container {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(135deg, #1e1e1e, #121212);
-    padding: 20px;
-  }
-  
-  .register-card {
-    background: rgba(0,0,0,0.85);
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 12px;
-    padding: 40px;
-    width: 100%;
-    max-width: 400px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
-    text-align: center;
-  }
-  
-  .register-card h2 {
-    font-size: 28px;
-    font-weight: 800;
-    background: linear-gradient(45deg, #ff6b9d, #4facfe);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 20px;
-  }
-  
-  .register-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .form-group {
-    text-align: left;
-  }
-  
-  .form-group label {
-    display: block;
-    font-size: 14px;
-    color: #ccc;
-    margin-bottom: 6px;
-  }
-  
-  .form-group input {
-    width: 100%;
-    padding: 12px 14px;
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 8px;
-    background: rgba(255,255,255,0.05);
-    color: #fff;
-    font-size: 14px;
-  }
-  
-  .form-group input:focus {
-    border-color: #ff6b9d;
-    outline: none;
-    background: rgba(255,255,255,0.08);
-  }
-  
-  .register-btn {
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
-    background: linear-gradient(45deg, #ff6b9d, #4facfe);
-    color: white;
-    font-weight: 600;
-    font-size: 16px;
-    cursor: pointer;
-    transition: opacity 0.3s ease;
-  }
-  
-  .register-btn:hover {
-    opacity: 0.9;
-  }
-  
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1e1e1e, #121212);
+  padding: 20px;
+  /* border: 2px solid blue; */
+  /* background-color: white; */
+}
+
+.register-card {
+  margin-top: 10px;
+  background: rgba(0, 0, 0, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  box-shadow: 0 0 4px 4px rgb(237, 175, 175);
+  /* border: 2px solid red; */
+}
+
+.register-card img{
+  width: 150px;
+  margin: 0 auto;
+}
+
+.register-card h2 {
+  font-size: 28px;
+  margin-top: 4px;
+  font-weight: 800;
+  font-family: cursive;
+  border-top: 1px solid white;
+  background: linear-gradient(45deg, #ff6b9d, #4facfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 6px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  font-size: 14px;
+}
+
+.form-group input:focus {
+  border-color: #ff6b9d;
+  outline: none;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.register-btn {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #ff6b9d, #4facfe);
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.register-btn:hover {
+  opacity: 0.9;
+}
+
+/* 🔒 Password Eye Icon Styling */
+.password-group {
+  position: relative;
+}
+
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 12px;
+  color: #ccc;
+  cursor: pointer;
+  font-size: 18px;
+  transition: color 0.2s ease;
+}
+
+.eye-icon:hover {
+  color: #ff6b9d;
+}
+
+.otp-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.otp-single-input {
+  width: 220px;
+  height: 50px;
+  text-align: center;
+  font-size: 1.3rem;
+  letter-spacing: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  margin-bottom: 10px;
+}
+
+.otp-single-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.otp-single-input:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 6px #6c63ff;
+}
+

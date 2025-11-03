@@ -49,7 +49,7 @@ export default function Login() {
           Don’t have an account?{" "}
           <span 
             className="signup-link"
-            onClick={() => navigate("/user/registration")} // SPA navigation
+            onClick={() => navigate("/users/register")} // SPA navigation
             style={{ cursor: "pointer", color: "#ff6b9d", textDecoration: "underline" }}
           >
             Sign Up

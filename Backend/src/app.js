@@ -14,10 +14,10 @@ app.use(cookieParser());
 // Import and use router
 
 import userRouter from './routes/user.routes.js';
-import hostRouter from "./routes/host.routes.js";
+// import hostRouter from "./routes/host.routes.js";
 
-app.use("/api/v1/users", userRouter);
-app.use("/api/v1/host", hostRouter)
+
+app.use("/users", userRouter);
 
 
 // console.log("User router mounted");

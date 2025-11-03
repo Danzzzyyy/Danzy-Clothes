@@ -50,7 +50,7 @@ const Header = ({ cartItemsCount, onCartClick }) => {
                   <a
                     onClick={() => {
                       setIsProfileOpen(false)
-                      navigate("/user/login")
+                      navigate("/users/login")
                     }}
                   >
                     Login
